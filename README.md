@@ -1,2 +1,2 @@
 # elm-tdd-training
-Elmで「TDD駆動開発」の内容をやっていく
+Elmで[テスト駆動開発](https://www.amazon.co.jp/dp/4274217884)の内容をやっていく
