@@ -44,8 +44,8 @@ suite =
                 \_ ->
                     let
                         subject =
-                            Dollar 5
+                            Dollar 5 == Dollar 5
                     in
-                    Expect.equal subject (Dollar 5)
+                    Expect.equal subject True
             ]
         ]
