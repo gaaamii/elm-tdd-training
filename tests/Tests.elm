@@ -39,21 +39,13 @@ suite =
                     in
                     Expect.equal times_3 15
             ]
-        , describe "times 2 してから times 3 するやつその2"
-            [ test "$5 * 3 = 15" <|
+        , describe "elmにおいてequalsメソッドなどいらないことを確認"
+            [ test "$5 = $5" <|
                 \_ ->
                     let
-                        times_3 =
-                            let
-                                times_2 =
-                                    let
-                                        five =
-                                            Dollar 5
-                                    in
-                                    five |> Dollar.times 2
-                            in
-                            times_2 |> Dollar.times 3 |> Dollar.amount
+                        subject =
+                            Dollar 5
                     in
-                    Expect.equal times_3 15
+                    Expect.equal subject (Dollar 5)
             ]
         ]
