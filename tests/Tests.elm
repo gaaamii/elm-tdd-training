@@ -26,4 +26,13 @@ suite =
                     in
                         Expect.equal subject (Franc 10)
             ]
+        , describe "Dollar and Franc"
+            [ test "Dollar 5 == Franc 5" <|
+                \_ ->
+                    let
+                        subject =
+                            Dollar 5
+                    in
+                        Expect.notEqual subject (Franc 5)
+            ]
         ]
