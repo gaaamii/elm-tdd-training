@@ -24,3 +24,13 @@ times multiplier money =
 
         Franc amount ->
             Franc (multiplier * amount)
+
+
+dollar : Int -> Money
+dollar amount =
+    Dollar amount
+
+
+franc : Int -> Money
+franc amount =
+    Franc amount
